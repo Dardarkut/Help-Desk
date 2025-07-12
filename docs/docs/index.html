@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide | InfySupport</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description"
+          content="InfyJobs comes with 3 different login panel each for Admin, Job Seeker and Employer with a different set of features and controls.">
+
+    <link rel="preload" href="../assets/css/0.styles.8c7e1082.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/10.js" as="script">
+    <link rel="prefetch" href="../js/11.js">
+    <link rel="prefetch" href="../js/12.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.8c7e1082.css">
+</head>
+<body>
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="../index.html" class="home-link router-link-active"><img src="../images/logo.png" alt="InfySupport" class="logo">
+                <span class="site-name can-hide">InfySupport</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">
+                        Home
+                    </a></div>
+                    <div class="nav-item"><a href="index.html" aria-current="page"
+                                             class="nav-link router-link-exact-active router-link-active">
+                        Docs
+                    </a></div>
+                    <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                        Releases
+                    </a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                        Upgrade Guide
+                    </a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="/" class="nav-link">
+                    Home
+                </a></div>
+                <div class="nav-item"><a href="/docs/" aria-current="page"
+                                         class="nav-link router-link-exact-active router-link-active">
+                    Docs
+                </a></div>
+                <div class="nav-item"><a href="/releases/" class="nav-link">
+                    Releases
+                </a></div>
+                <div class="nav-item"><a href="/upgrade/" class="nav-link">
+                    Upgrade Guide
+                </a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!---->
+                    </p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            <li><a href="#technologies-used" class="sidebar-link">Technologies Used</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#installation-guide" class="sidebar-link">Installation Guide</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#system-requirement"
+                                                                      class="sidebar-link">System Requirement</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#setup-infysupport-into-local-environment" class="sidebar-link">Setup
+                                InfySupport into Local Environment</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_1-install-xampp-wamp-if-you-don-t-have-it"
+                                            class="sidebar-link">1. Install xampp/wamp (if you don't have it).</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-create-folder-infysupport"
+                                                                      class="sidebar-link">2. Create folder
+                                        InfySupport</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_3-unzip-dist-zip-to-infysupport-folder" class="sidebar-link">3.
+                                        Unzip dist zip to InfySupport folder</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_4-point-the-domain-to-the-uploaded-folder"
+                                            class="sidebar-link">4. Point the domain to the uploaded folder</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_5-setup-the-project-s-details"
+                                                                      class="sidebar-link">5. Setup the project's
+                                        details</a></li>
+                                    <li class="sidebar-sub-header"><a href="#setup-infysupport-system"
+                                                                      class="sidebar-link">Setup InfySupport System</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#_1-copy-files-to-web-server"
+                                                                      class="sidebar-link">1. Copy files to web
+                                        server</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-setup-default-db"
+                                                                      class="sidebar-link">2. Setup Default DB</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_3-setup-environment-env-file"
+                                                                      class="sidebar-link">3. Setup environment .env
+                                        file</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_4-admin-login" class="sidebar-link">4.
+                                        Admin login</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_5-setup-pusher-configuration"
+                                                                      class="sidebar-link">5. Setup Pusher
+                                        Configuration</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_6-setup-google-login"
+                                                                      class="sidebar-link">6. Setup Google Login</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#_7-setup-facebook-login"
+                                                                      class="sidebar-link">7. Setup Facebook Login</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#key-features-and-concepts" class="sidebar-link">Key Features and
+                                Concepts</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#multi-languages-support" class="sidebar-link">Multi languages
+                                Support</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#beautiful-website" class="sidebar-link">Beautiful Website</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#admin-panel" class="sidebar-link">Admin Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#dashboard" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#agents"
+                                                                      class="sidebar-link">Agents</a></li>
+                                    <li class="sidebar-sub-header"><a href="#customers" class="sidebar-link">Customers</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#categories" class="sidebar-link">Categories</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#tickets"
+                                                                      class="sidebar-link">Tickets</a></li>
+                                    <li class="sidebar-sub-header"><a href="#conversations" class="sidebar-link">Conversations</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#faqs" class="sidebar-link">FAQs</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#settings" class="sidebar-link">Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#agent-panel" class="sidebar-link">Agent Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#dashboard-2" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#tickets-2" class="sidebar-link">Tickets</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#conversations-2"
+                                                                      class="sidebar-link">Conversations</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#customer-panel" class="sidebar-link">Customer Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#dashboard-3" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#my-tickets" class="sidebar-link">My
+                                        Tickets</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide"
+                                                                                  class="header-anchor">#</a> Guide</h1>
+                <p>Help Desk For Customers to track their tickets progress.</p>
+                <h2 id="technologies-used"><a href="#technologies-used" class="header-anchor">#</a> Technologies Used
+                </h2>
+                <p>This system uses multiple technologies to give the best possible experience.</p>
+                <ul>
+                    <li>PHP with Laravel Framework</li>
+                    <li>MySQL 5.6+</li>
+                    <li>PHP 7.2+</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                </ul>
+                <h2 id="installation-guide"><a href="#installation-guide" class="header-anchor">#</a> Installation Guide
+                </h2>
+                <p>We tried our best to make the installation of the system as easy as possible.
+                    System Requirements
+                    It is assumed that you have primary knowledge Laravel installation knowledge since this application
+                    is built on Laravel.</p>
+                <h3 id="system-requirement"><a href="#system-requirement" class="header-anchor">#</a> System Requirement
+                </h3>
+                <p>It is assumed that you have primary knowledge Laravel and JS application installation knowledge since
+                    this application is built on Laravel with JS.</p>
+                <p>You can read about laravel Requirements <a
+                        href="https://laravel.com/docs/8.x/deployment#server-requirements" target="_blank"
+                        rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                                 focusable="false" x="0px" y="0px" viewBox="0 0 100 100"
+                                                                 width="15" height="15" class="icon outbound"><path
+                        fill="currentColor"
+                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>(Optional)
+                    You need update below variables in php.ini file if you want to send bigger files.</p>
+                <p>upload_max_filesize = 50M</p>
+                <p>max_file_uploads = 50</p>
+                <p>post_max_size = 100M</p>
+                <h2 id="setup-infysupport-into-local-environment"><a href="#setup-infysupport-into-local-environment"
+                                                                     class="header-anchor">#</a> Setup InfySupport into
+                    Local Environment</h2>
+                <p>You can setup InfySupport into your local by using both zip files, but we recommend to use dist file,
+                    so you have to perform minimal steps.</p>
+                <p>Here are some steps to setup InfySupport into your local environment :</p>
+                <h3 id="_1-install-xampp-wamp-if-you-don-t-have-it"><a
+                        href="#_1-install-xampp-wamp-if-you-don-t-have-it" class="header-anchor">#</a> 1. Install
+                    xampp/wamp (if you don't have it).</h3>
+                <h3 id="_2-create-folder-infysupport"><a href="#_2-create-folder-infysupport"
+                                                         class="header-anchor">#</a> 2. Create folder
+                    <code>InfySupport</code></h3>
+                <ul>
+                    <li>if you are using wamp then create InfySupport folder under you_path_to_wamp/www/</li>
+                    <li>if you are using xamp then create InfySupport folder under you_path_to_xamp/htdocs/</li>
+                </ul>
+                <h3 id="_3-unzip-dist-zip-to-infysupport-folder"><a href="#_3-unzip-dist-zip-to-infysupport-folder"
+                                                                    class="header-anchor">#</a> 3. Unzip dist zip to
+                    InfySupport folder</h3>
+                <h3 id="_4-point-the-domain-to-the-uploaded-folder"><a
+                        href="#_4-point-the-domain-to-the-uploaded-folder" class="header-anchor">#</a> 4. Point the
+                    domain to the uploaded folder</h3>
+                <p>You need to create virtual host first to setup InfySupport. You can find steps here to create virtual
+                    host.</p>
+                <ul>
+                    <li>You can find steps <a
+                            href="https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567"
+                            target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     aria-hidden="true"
+                                                                                     focusable="false" x="0px" y="0px"
+                                                                                     viewBox="0 0 100 100" width="15"
+                                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>XAMPP</code>.
+                    </li>
+                    <li>You can find steps <a
+                            href="http://codedecode.co.in/blog/wordpress/set-up-virtual-host-with-wamp/" target="_blank"
+                            rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                     aria-hidden="true" focusable="false" x="0px"
+                                                                     y="0px" viewBox="0 0 100 100" width="15"
+                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>WAMP</code>.
+                    </li>
+                </ul>
+                <p>Point your domain or subdomain to the InfySupport folder.</p>
+                <p>Please note that, InfySupport must be installed on a primary domain or subdomain. Installing on a
+                    sub-folder will not work, for example:</p>
+                <div class="language- extra-class"><pre><code>    example.com/InfySupport (Invalid)
+    localhost/InfySupport (Invalid) if you are putting it in sub folder or root website)
+    example.com (Valid)
+    local.InfySupport.com (Valid)
+    InfySupport.test (Valid)
+</code></pre>
+                </div>
+                <h3 id="_5-setup-the-project-s-details"><a href="#_5-setup-the-project-s-details" class="header-anchor">#</a>
+                    5. Setup the project's details</h3>
+                <p>Please <a href="#_2-setup-default-db">Click Here</a> to follow the next steps for project setup.</p>
+                <h3 id="setup-infysupport-system"><a href="#setup-infysupport-system" class="header-anchor">#</a> Setup
+                    InfySupport System</h3>
+                <p>If you have purchased the InfySupport system then you will be able to find the zip named <code>dist.zip</code>.
+                </p>
+                <p>If you want to setup <code>InfySupport</code> into your local environment then you can take help from
+                    here <a href="#setup-infysupport-into-local-environment">here</a>.</p>
+                <p>Now if you want to setup InfySupport on your server then you can directly copy the
+                    <code>dist.zip</code> folder to your web root directory on a server and the following steps:</p>
+                <h3 id="_1-copy-files-to-web-server"><a href="#_1-copy-files-to-web-server" class="header-anchor">#</a>
+                    1. Copy files to web server</h3>
+                <p>Upload <code>dist.zip</code> to your web server's root (public_html) and extract it there.</p>
+                <h3 id="_2-setup-default-db"><a href="#_2-setup-default-db" class="header-anchor">#</a> 2. Setup Default
+                    DB</h3>
+                <ol>
+                    <li>Open PHPMyAdmin on your server and do a login.</li>
+                </ol>
+                <p><img src="../images/docs-images/db1.png" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Click on the Databases tab.</li>
+                </ol>
+                <p><img src="../images/docs-images/db2.png" alt="Setup Default DB"></p>
+                <ol start="3">
+                    <li>Create a new database and specify a Database name of your choice and Click Create button.</li>
+                </ol>
+                <p><img src="../images/docs-images/db3.png" alt="Setup Default DB"></p>
+                <ol start="4">
+                    <li><p>Now on the left, select the database (infy_support) OR the one that you have created.</p>
+                    </li>
+                    <li><p>Click Import in the top menu</p></li>
+                </ol>
+                <p><img src="../images/docs-images/db4.png" alt="Setup Default DB"></p>
+                <ol start="6">
+                    <li>Under Import, choose the default sql file from <code>dist/database/infy_support.sql</code> and
+                        click button Go.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/db5.png" alt="Setup Default DB"></p>
+                <h3 id="_3-setup-environment-env-file"><a href="#_3-setup-environment-env-file"
+                                                          class="header-anchor">#</a> 3. Setup environment .env file
+                </h3>
+                <ol>
+                    <li>Open .env file from your server's root folder.</li>
+                </ol>
+                <p><img src="../images/docs-images/setup.jpg" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Update your .env file</li>
+                </ol>
+                <p>You need to change the following information into your environment (.env) file.</p>
+                <div class="language- extra-class"><pre><code>- APP_NAME - Name of your Application
+- APP_URL - Change this URL with your server URL (including trailing path if you are putting it in sub folder or root website)
+- DB_HOST - Put your database hostname here
+- DB_PORT - Put your database port here if it does not default to 3306
+- DB_DATABASE - Change it to your database name
+- DB_USERNAME - Name of your database user
+- DB_PASSWORD - Password of your database user
+</code></pre>
+                </div>
+                <p>You will also need to set up mail configuration, you can read more about here for that setup based on
+                    mail service that you use.</p>
+                <div class="language- extra-class"><pre><code>- MAIL_MAILER 
+- MAIL_HOST
+- MAIL_PORT
+- MAIL_USERNAME
+- MAIL_PASSWORD
+- MAIL_ENCRYPTION
+- ADMIN_EMAIL
+- MAIL_FROM_ADDRESS=${ADMIN_EMAIL}
+- MAIL_FROM_NAME=&quot;${APP_NAME}&quot;
+</code></pre>
+                </div>
+                <p>If you want to store your files to direct your <code>s3</code> bucket then you have to use following
+                    <code>.env</code> variables.
+                    You need to change <code>FILESYSTEM_DRIVER</code> and <code>MEDIA_DISK</code> value to
+                    <code>s3</code> when you are using AWS file storage.</p>
+                <div class="language- extra-class"><pre><code>- AWS_ACCESS_KEY_ID=
+- AWS_SECRET_ACCESS_KEY=
+- AWS_DEFAULT_REGION=us-east-1
+- AWS_BUCKET=
+- AWS_ENDPOINT=
+- AWS_URL=
+</code></pre>
+                </div>
+                <p>Or you can use your choice of storage driver to store your media assets if you want. All of your
+                    attachments will be placed into that.</p>
+                <p>Setup the google and facebook social login. find step <a href="#_6-setup-google-login">To Setup
+                    Google Login</a> to set up google login and click <a href="#_7-setup-facebook-login">To Setup
+                    Facebook Login</a> to setup the facebook login.</p>
+                <div class="language- extra-class"><pre><code>- GOOGLE_CLIENT_ID= 
+- GOOGLE_CLIENT_SECRET= 
+- GOOGLE_REDIRECT={APP_URL}/login/google/callback
+
+- FACEBOOK_APP_ID=
+- FACEBOOK_APP_SECRET=
+- FACEBOOK_REDIRECT={APP_URL}/login/facebook/callback
+</code></pre>
+                </div>
+                <h3 id="_4-admin-login"><a href="#_4-admin-login" class="header-anchor">#</a> 4. Admin login</h3>
+                <p>You can do admin login by accessing given URL.</p>
+                <p><code>YOUR_APP_URL/login</code></p>
+                <p>email: <code>admin@infysupport.com</code></p>
+                <p>password: <code>123456</code></p>
+                <h3 id="_5-setup-pusher-configuration"><a href="#_5-setup-pusher-configuration"
+                                                          class="header-anchor">#</a> 5. Setup Pusher Configuration</h3>
+                <p>Go to <a href="https://pusher.com/" target="_blank" rel="noopener noreferrer">pusher<span><svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor"
+                                                                                                 d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a> website and do sign up and if you have an
+                    account you can login.
+                </p>
+                <ol>
+                    <li>After Login you will get below screen.</li>
+                </ol>
+                <p><img src="../images/docs-images/pusher1.png" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Click on “Manage” button. After clicking this button you get below screen.</li>
+                </ol>
+                <p><img src="../images/docs-images/pusher2.png" alt="Setup Default DB"></p>
+                <ol start="3">
+                    <li>Click on “Create app” button. After clicking this button you get below screen.</li>
+                </ol>
+                <p><img src="../images/docs-images/pusher3.png" alt="Setup Default DB"></p>
+                <ol start="4">
+                    <li>Now give your app name, select your cluster, select “JQuery” from front-end tech, “laravel” from
+                        back-end tech and click on “Create app” button. As shown in below image.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/pusher4.png" alt="Setup Default DB"></p>
+                <ol start="5">
+                    <li>After creating app yow will redirect to below screen. After that click on “App settings” menu as
+                        pointed in below screen.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/pusher5.png" alt="Setup Default DB"></p>
+                <ol start="6">
+                    <li>After clicking on “App Settings” you will redirect to below screen. From there turn on “Enable
+                        client events” toggle switch.
+                    </li>
+                </ol>
+                <p><img src="../images/docs-images/pusher6.png" alt="Setup Default DB"></p>
+                <ol start="7">
+                    <li>Now click on “App Keys” menu and you will get below screen.</li>
+                </ol>
+                <p><img src="../images/docs-images/pusher7.png" alt="Setup Default DB"></p>
+                <ol start="8">
+                    <li><p>Now add this values in you env file.</p>
+                        <div class="language- extra-class"><pre><code> - PUSHER_APP_ID - Your pusher app id
+ - PUSHER_APP_KEY - Your pusher app key
+ - PUSHER_APP_SECRET - Your pusher app secret
+ - PUSHER_APP_CLUSTER - Your pusher app cluster
+</code></pre>
+                        </div>
+                    </li>
+                </ol>
+                <h3 id="_6-setup-google-login"><a href="#_6-setup-google-login" class="header-anchor">#</a> 6. Setup
+                    Google Login</h3>
+                <p>You just need google client id, secret and redirect URL for google auth login.</p>
+                <p>You can find steps <a
+                        href="https://theonetechnologies.com/blog/post/how-to-get-google-app-client-id-and-client-secret"
+                        target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                 aria-hidden="true" focusable="false"
+                                                                                 x="0px" y="0px" viewBox="0 0 100 100"
+                                                                                 width="15" height="15"
+                                                                                 class="icon outbound"><path
+                        fill="currentColor"
+                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a> or you can watch video at <a
+                        href="https://www.youtube.com/watch?v=sPlY-Sr2fFg" target="_blank" rel="noopener noreferrer">here<span><svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor"
+                                                                                                 d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>NOTE: DO not forget that Authorized Redirect URI should be e.g : YOUR_DOMAIN/login/google/callback,
+                    you just need to replace YOUR_DOMAIN by your domain name.</p>
+                <p>Now you have Client ID, Client Secret and Redirect URI so replace its value into appropriate .env
+                    variable.</p>
+                <p>Google social login env variables are following :</p>
+                <div class="language- extra-class"><pre><code>- GOOGLE_CLIENT_ID= 
+- GOOGLE_CLIENT_SECRET= 
+- GOOGLE_REDIRECT={APP_URL}/login/google/callback
+</code></pre>
+                </div>
+                <h3 id="_7-setup-facebook-login"><a href="#_7-setup-facebook-login" class="header-anchor">#</a> 7. Setup
+                    Facebook Login</h3>
+                <p>You just need facebook app id, app secret and redirect URL for facebook auth login.</p>
+                <p>You can find steps <a href="https://magefan.com/blog/create-facebook-application" target="_blank"
+                                         rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                  aria-hidden="true" focusable="false"
+                                                                                  x="0px" y="0px" viewBox="0 0 100 100"
+                                                                                  width="15" height="15"
+                                                                                  class="icon outbound"><path
+                        fill="currentColor"
+                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>NOTE: DO not forget that Authorized Redirect URI should be e.g : YOUR_DOMAIN/login/facebook/callback,
+                    you just need to replace YOUR_DOMAIN by your domain name.</p>
+                <p>Now you have App ID, App Secret and Redirect URI so replace its value into appropriate .env
+                    variable.</p>
+                <p>Facebook login env variables are following :</p>
+                <div class="language- extra-class"><pre><code>- FACEBOOK_APP_ID=
+- FACEBOOK_APP_SECRET=
+- FACEBOOK_REDIRECT={APP_URL}/login/facebook/callback
+</code></pre>
+                </div>
+                <h2 id="key-features-and-concepts"><a href="#key-features-and-concepts" class="header-anchor">#</a> Key
+                    Features and Concepts</h2>
+                <p>Here are some Key Features and Concepts that InfySupport provides.</p>
+                <h2 id="multi-languages-support"><a href="#multi-languages-support" class="header-anchor">#</a> Multi
+                    languages Support</h2>
+                <p>We are supporting 9 languages in each panel (Admin | Agent | Customer)</p>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>French</li>
+                    <li>German</li>
+                    <li>Russian</li>
+                    <li>Portuguese</li>
+                    <li>Arabic</li>
+                    <li>Chinese</li>
+                    <li>Turkish</li>
+                </ul>
+                <h2 id="beautiful-website"><a href="#beautiful-website" class="header-anchor">#</a> Beautiful Website
+                </h2>
+                <p>InfySupport comes with beautiful landing page which help customers to register into system and create
+                    tickets.</p>
+                <p>Customers can search public tickets and check comments on that tickets. Sometimes they don't need to
+                    create a ticket at all. as same tickets will be created by some other users too.</p>
+                <p>Customers must have to do registration into system while submitting their first ticket. Later they
+                    can log in into a portal and track their ticket status there.</p>
+                <p>If ticket status is private then only owner of the customer can see that ticket, for that they can
+                    use search ticket option on a website. For searching private ticket they have to add unique ticket
+                    number and their email.</p>
+                <h2 id="admin-panel"><a href="#admin-panel" class="header-anchor">#</a> Admin Panel</h2>
+                <h3 id="dashboard"><a href="#dashboard" class="header-anchor">#</a> Dashboard</h3>
+                <p>All the information at a glance about what's happening in the support system. How many tickets
+                    submitted so far. How many tickets are still active and how many are closed. It is the place where
+                    system admin can have a complete idea about his site.</p>
+                <p>On admin dashboard they view various charts like how many tickets assigned to particular agents, how
+                    many tickets submitted on a particular category.</p>
+                <h3 id="agents"><a href="#agents" class="header-anchor">#</a> Agents</h3>
+                <p>Agent will play import role in this system as they are going to manage the customers and their
+                    tickets.</p>
+                <p>Admin can manage all agents from Agents menu. See their profile information and make edits if needed.
+                    Even he can create and delete the agents.</p>
+                <p>Admin can see the tickets details, that how many tickets are assigned to related agent How many
+                    tickets are closed, open for a specific agent.</p>
+                <h3 id="customers"><a href="#customers" class="header-anchor">#</a> Customers</h3>
+                <p>Customers will be handled by agents. Customer will create tickets and raise issues to support
+                    system.</p>
+                <p>They cal also do a login and check his tickets that they created. They can add comments to
+                    tickets.</p>
+                <h3 id="categories"><a href="#categories" class="header-anchor">#</a> Categories</h3>
+                <p>Every ticket can be categorized into a different category based on its purpose. So it is easy for the
+                    admin to find out how many tickets have been submitted on a particular category.</p>
+                <p>Admin can see lists of tickets by a category in this module, that how many open / closed tickets are
+                    there in a specific category.</p>
+                <h3 id="tickets"><a href="#tickets" class="header-anchor">#</a> Tickets</h3>
+                <p>Admin can see all the tickets that are in system in this module. Admin can also create new tickets on
+                    behalf of customer and assign it to related agent.</p>
+                <p>Admin can delete a specific ticket too and able to change the ticket status.</p>
+                <h3 id="conversations"><a href="#conversations" class="header-anchor">#</a> Conversations</h3>
+                <p>New customer conversation is arrived here. Admin can communicate with customer and assign agent to
+                    that customer. Admin also view all communication between customer and agent.</p>
+                <h3 id="faqs"><a href="#faqs" class="header-anchor">#</a> FAQs</h3>
+                <p>Manage your website FAQs in this module to answer users' frequently asked questions.</p>
+                <h3 id="settings"><a href="#settings" class="header-anchor">#</a> Settings</h3>
+                <p>Various settings related to support system branding like, name, company url, logo, footer, company
+                    address, social media links etc. can be managed from this section.</p>
+                <h2 id="agent-panel"><a href="#agent-panel" class="header-anchor">#</a> Agent Panel</h2>
+                <h3 id="dashboard-2"><a href="#dashboard-2" class="header-anchor">#</a> Dashboard</h3>
+                <p>This is where an agent can see statistics of his account about currently open tickets, closed
+                    tickets, etc. On agent dashboard they view various charts like how many tickets assigned to them on
+                    a particular category.</p>
+                <h3 id="tickets-2"><a href="#tickets-2" class="header-anchor">#</a> Tickets</h3>
+                <p>The agent can manage the ticket assigned to them from here. He can reply the ticket. After resolving
+                    the customer's problem, they can also change the status of the ticket.</p>
+                <h3 id="conversations-2"><a href="#conversations-2" class="header-anchor">#</a> Conversations</h3>
+                <p>Assigned conversation view here. Agent can reply the customer queries from here. Agent also start new
+                    conversation with other members.</p>
+                <h2 id="customer-panel"><a href="#customer-panel" class="header-anchor">#</a> Customer Panel</h2>
+                <h3 id="dashboard-3"><a href="#dashboard-3" class="header-anchor">#</a> Dashboard</h3>
+                <p>This is where customer can see statistics of his account about currently their open tickets, closed
+                    tickets.</p>
+                <h3 id="my-tickets"><a href="#my-tickets" class="header-anchor">#</a> My Tickets</h3>
+                <p>Customer can see the status of his ticket. He can reply to the ticket. Once they get an answer to
+                    their problem, they can close the ticket from here.</p></div>
+            <footer class="page-edit"><!----> <!----></footer> <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/10.js" defer></script>
+</body>
+</html>
